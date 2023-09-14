@@ -1,0 +1,90 @@
+:root{
+    --brandColor:#102746;
+    --textColor:#000000;
+    --accentColor:#FFFFFF;
+    --buttonColor:#1B7DFF;
+}
+
+body{
+    color: var(--brandColor);
+    background-color:  moccasin;
+}
+
+.title{
+color: var(--brandColor);
+}
+
+.link{
+    color: var(--buttonColor);
+}
+.link:hover,
+.link:focus{
+    color: var(--accentColor);
+}
+
+/* HEADER */
+
+.item{
+    color: var(--accentColor);
+}
+
+.item:hover,
+.item:focus{
+    color: var(--brandColor);
+}
+
+.button{
+    cursor: pointer;
+    color: #FFF;
+font-family: Lato;
+font-weight: 400;
+line-height: calc(24 / 18); 
+
+
+}
+
+
+
+/* HERO */
+
+.hero{
+    color: var(--accentColor);
+}
+.hero-button{
+    background-color:var(--buttonColor) ;
+    color: var(--accentColor);
+}
+
+.hero-button:hover,
+.hero-button:focus{
+    background-color: var(--accentColor);
+    color: var(--textColor);
+}
+
+/* Benefits of Odigo  */
+
+.advantages-list{
+    color: var(--textColor);
+}
+
+/* Get inspired for your next trip  */
+
+.travel-title{
+    color: var(--accentColor);
+}
+
+/* about china */
+
+/* Today top places to visit  */
+.popular-title{
+    color: var(--accentColor);
+}
+.popular-link{
+    background-color: var(--buttonColor);
+    color: var(--accentColor);
+}
+
+/* FOOTER */
+footer{
+    color: var(--accentColor);
+}
