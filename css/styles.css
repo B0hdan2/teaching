@@ -7,11 +7,21 @@
 
 body{
     color: var(--brandColor);
-    background-color:  moccasin;
+    background-color:  rgba(181, 165, 103, 0.33);
+
+
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: calc(24 / 16);
 }
 
 .title{
-color: var(--brandColor);
+color: var(--textColor);
+
+font-size: 18px;
+font-weight: 500;
+line-height: calc(24 / 18); 
 }
 
 .link{
@@ -19,7 +29,7 @@ color: var(--brandColor);
 }
 .link:hover,
 .link:focus{
-    color: var(--accentColor);
+    color: var(--brandColor);
 }
 
 a{
@@ -31,39 +41,79 @@ ul{
 }
 
 .button{
-padding: 15px 39px 14px ;
-
+cursor: pointer;
 }
-/* HEADER */
+/* HEADER START*/
 
-.item{
+.header-item{
     color: var(--accentColor);
+
+font-size: 18px;
+font-weight: 400;
+line-height: calc(24 / 18);
 }
 
-.item:hover,
-.item:focus{
+.header-item:hover,
+.header-item:focus{
     color: var(--brandColor);
 }
 
-.registration-button{
+.header-button{
     cursor: pointer;
-    color: #FFF;
+    color: var(--accentColor);
+    background-color: rgba(000, 000, 000, 0);
+    border: none;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: calc(24 / 18);
+
+    padding: 0;
 }
 
-.registration-button:hover,
-.registration-button:focus{
+.header-button:hover,
+.header-button:focus{
     color: var(--brandColor);
 }
+/* HEADER END*/
 
 
-/* HERO */
+/* HERO START */
 
 .hero{
     color: var(--accentColor);
 }
+
+.hero-title{
+font-size: 50px;
+font-weight: 500;
+color: inherit;
+}
+
+.hero-text{
+font-weight: 400;
+
+}
+
+.hero-lead{
+font-size: 18px;
+font-weight: 500;
+line-height: calc(24 / 18) 
+}
+
 .hero-button{
     background-color:var(--buttonColor) ;
     color: var(--accentColor);
+
+
+font-family: inherit;
+font-size: 24px;
+font-weight: 500;
+
+/* width: 171px; */
+padding: 15px 39px 14px ;
+border: none;
+
 }
 
 .hero-button:hover,
@@ -71,31 +121,113 @@ padding: 15px 39px 14px ;
     background-color: var(--accentColor);
     color: var(--textColor);
 }
+/* HERO END */
 
-/* Benefits of Odigo  */
+
+
+/* Benefits of Odigo START */
+
+.advantages-title{
+    
+font-size: 35px;
+font-weight: 500;
+
+}
 
 .advantages-list{
     color: var(--textColor);
 }
 
-/* Get inspired for your next trip  */
+
+
+/* Benefits of Odigo END */
+
+
+/* Get inspired for your next trip START */
 
 .travel-title{
-    color: var(--accentColor);
+    color: var(--brandColor);
+font-size: 35px;
+line-height: normal;
 }
 
-/* about china */
+.travel-link{
+  
+}
 
-/* Today top places to visit  */
-.popular-title{
+.travel-subject{
     color: var(--accentColor);
+
+font-size: 50px;
+font-weight: 700;
+/* line-height: normal; */
+
+}
+
+/* Get inspired for your next trip  END*/
+
+
+/* about china START*/
+
+.china-title{
+font-size: 30px;
+font-weight: 500;
+line-height: calc(40 / 30);
+}
+
+/* about china END*/
+
+/* Today top places to visit START */
+
+.popular-title{
+font-size: 35px;
+font-weight: 500;
+}
+
+.popular-subject{
+    color: var(--accentColor);
+
+font-size: 18px;
+font-weight: 500;
+line-height: calc(24/18);
 }
 .popular-link{
     background-color: var(--buttonColor);
     color: var(--accentColor);
+
+    line-height: normal;
+
+    padding: 12px 19px 11px;
 }
+.popular-link:hover,
+.popular-link:focus{
+    background-color: var(--brandColor);
+}
+/* Today top places to visit  END*/
+
 
 /* FOOTER */
 footer{
+    background-color: rgb(14, 29, 40);
+}
+
+.footer-subtitle{
     color: var(--accentColor);
+
+font-style: normal;    
+font-size: 18px;
+font-weight: 500;
+line-height: calc(24 / 18); 
+}
+
+.footer-link{
+    color: var(--accentColor);
+
+    font-style: normal;
+    font-family: inherit;
+}
+
+.footer-link:hover,
+.footer-link:focus{
+    color: var(--buttonColor);
 }
