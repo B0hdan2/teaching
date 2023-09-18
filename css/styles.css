@@ -44,6 +44,9 @@ ul{
 cursor: pointer;
 }
 /* HEADER START*/
+.header-logo{
+    color: var(--accentColor);
+}
 
 .header-item{
     color: var(--accentColor);
@@ -151,9 +154,9 @@ font-size: 35px;
 line-height: normal;
 }
 
-.travel-link{
+/* .travel-link{
   
-}
+} */
 
 .travel-subject{
     color: var(--accentColor);
