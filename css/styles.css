@@ -46,6 +46,7 @@ cursor: pointer;
 /* HEADER START*/
 .header-logo{
     color: var(--accentColor);
+    
 }
 
 .header-item{
