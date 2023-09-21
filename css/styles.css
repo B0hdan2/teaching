@@ -7,14 +7,21 @@
 
 body{
     color: var(--brandColor);
-    background-color:  rgba(181, 165, 103, 0.33);
+    background-color: var(--accentColor);
 
 
     font-family: Lato, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: calc(24 / 16);
+    
 }
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 88px;
+  }
 
 .title{
 color: var(--textColor);
@@ -38,27 +45,83 @@ a{
 
 ul{
    list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+img{
+    display: block;
+    background-color: var(--brandColor);
 }
 
 .button{
 cursor: pointer;
 }
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+}
+
+.box{
+    max-width: 1440px;
+    padding: 0px 191px;
+    margin: 0 auto;
+}
 /* HEADER START*/
+
+.header{
+    padding-bottom: 176px;
+
+    background-color: rgba(18, 227, 255, 0.637);
+}
+
+.header-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 .header-logo{
+    display: inline-block;
     color: var(--accentColor);
+    font-size: 40px;
+   
+}
+
+.header-list{
+    display: flex;
+    align-items: center;
+    justify-content: end;
     
 }
 
-.header-item{
+
+.header-item:not(:last-child){
+    margin-right: 82px;
+}
+
+
+.header-link{
     color: var(--accentColor);
 
 font-size: 18px;
 font-weight: 400;
 line-height: calc(24 / 18);
+
+padding: 62px 0px;
+
 }
 
-.header-item:hover,
-.header-item:focus{
+.header-link:hover,
+.header-link:focus{
     color: var(--brandColor);
 }
 
@@ -72,7 +135,8 @@ line-height: calc(24 / 18);
     font-weight: 400;
     line-height: calc(24 / 18);
 
-    padding: 0;
+    padding: 50px 0px;
+    display: inline-block;
 }
 
 .header-button:hover,
@@ -86,23 +150,46 @@ line-height: calc(24 / 18);
 
 .hero{
     color: var(--accentColor);
+    padding-bottom: 372px;
+    background-color: rgba(18, 227, 255, 0.637);
 }
 
 .hero-title{
 font-size: 50px;
 font-weight: 500;
 color: inherit;
+
+margin-bottom: 22px;
 }
+
 
 .hero-text{
 font-weight: 400;
+width: 546px;
+margin-bottom: 59px;
+}
 
+.hero-box{
+    display: flex;
+   
+}
+
+.hero-list{
+    display: flex;
+    padding-top: 11px;
 }
 
 .hero-lead{
+
 font-size: 18px;
 font-weight: 500;
-line-height: calc(24 / 18) 
+line-height: calc(24 / 18);
+
+margin-right: 142px;
+}
+
+.hero-lead:last-child{
+    margin-right: 88px;
 }
 
 .hero-button{
@@ -130,18 +217,37 @@ border: none;
 
 
 /* Benefits of Odigo START */
+.advantages{
+    padding-bottom: 112px;
+}
 
 .advantages-title{
+    display: inline-block;
     
 font-size: 35px;
 font-weight: 500;
+
+padding-top: 93px;
+margin-bottom: 223px;
 
 }
 
 .advantages-list{
     color: var(--textColor);
+    display: flex;
 }
 
+.advantages-item:not(:last-child){
+    margin-right: 55px;
+}
+
+.advantages-subject{
+    margin-bottom: 26px;
+}
+
+.advantages-text{
+    margin-bottom: 39px;
+}
 
 
 /* Benefits of Odigo END */
@@ -149,15 +255,32 @@ font-weight: 500;
 
 /* Get inspired for your next trip START */
 
+.travel{
+    padding-bottom: 130px;
+}
+
+.travel-container{
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 46px;
+}
+
 .travel-title{
     color: var(--brandColor);
 font-size: 35px;
 line-height: normal;
 }
 
+.travel-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 
 .travel-subject{
-    color: var(--accentColor);
+    color: var(--textColor);
 
 font-size: 50px;
 font-weight: 700;
@@ -170,10 +293,21 @@ font-weight: 700;
 
 /* about china START*/
 
+.china-list{
+    display: flex;
+}
+
+
 .china-title{
 font-size: 30px;
 font-weight: 500;
 line-height: calc(40 / 30);
+
+margin-bottom: 45px;
+}
+
+.china-text{
+    margin-bottom: 94px;
 }
 
 /* about china END*/
@@ -185,14 +319,38 @@ font-size: 35px;
 font-weight: 500;
 }
 
+
+/* .popular-link{
+display: flex;
+flex-wrap: wrap;
+} */
+/* .popular-list{
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.popular-item{
+    margin-bottom: 30px;
+}
+
+.popular-img{
+    margin-bottom: 50px;
+}
+
 .popular-subject{
-    color: var(--accentColor);
+    color: var(--buttonColor);
 
 font-size: 18px;
 font-weight: 500;
 line-height: calc(24/18);
 }
+
+.popular-text{
+    margin-bottom: 30px;
+}
+
 .popular-link{
+    display: inline-block;
     background-color: var(--buttonColor);
     color: var(--accentColor);
 
@@ -210,6 +368,26 @@ line-height: calc(24/18);
 /* FOOTER */
 footer{
     background-color: rgb(14, 29, 40);
+    padding-top: 100px;
+    padding-bottom: 118px;
+}
+
+.footer-container{
+    display: flex;
+}
+
+.footer-logo{
+    color: var(--accentColor);
+    margin-right:356px ;
+
+    font-size: 90px;
+}
+
+.footer-box{
+    display: flex;
+}
+.holder:not(:last-child){
+    margin-right: 140px;
 }
 
 .footer-subtitle{
@@ -219,6 +397,12 @@ font-style: normal;
 font-size: 18px;
 font-weight: 500;
 line-height: calc(24 / 18); 
+
+margin-bottom: 3px;
+}
+
+.footer-item:not(:last-child){
+    margin-bottom: 3px;
 }
 
 .footer-link{
@@ -232,3 +416,16 @@ line-height: calc(24 / 18);
 .footer-link:focus{
     color: var(--buttonColor);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
