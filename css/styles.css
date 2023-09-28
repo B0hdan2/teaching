@@ -20,7 +20,7 @@ body{
 }
 
 .container {
-    max-width: 1320px;
+    max-width: 1275px;
     margin: 0 auto;
     padding: 0 15px;
   }
@@ -276,6 +276,7 @@ line-height: normal;
 .travel-list{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* .travel-list{
@@ -357,7 +358,7 @@ font-weight: 500;
     margin-bottom: 58px;
 }
 .popular-item:not(:nth-child(3n + 3)){
-    margin-right: 58px;
+    margin-right: 36px;
  }
 
  .popular-item:nth-last-child(-n + 3){
