@@ -261,10 +261,10 @@ background-repeat: no-repeat;
 
 }
 .advantages-item:nth-child(1)::before{
-    background-image: url(../benefits-of-odigo-photo/Icon\ \(2\).png);
+    background-image: url(../benefits-of-odigo-photo/Icon-2-png);
 }
 .advantages-item:nth-child(2)::before{
-    background-image: url(../benefits-of-odigo-photo/Icon\ \(1\).png);
+    background-image: url(../benefits-of-odigo-photo/Icon-1-png);
 }
 .advantages-item:nth-child(3)::before{
     background-image: url(../benefits-of-odigo-photo/Icon\.png);
