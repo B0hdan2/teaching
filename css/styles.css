@@ -226,6 +226,7 @@ border: none;
     padding-bottom: 112px;
 }
 
+
 .advantages-title{
     display: inline-block;
     
@@ -245,13 +246,42 @@ margin-bottom: 223px;
 .advantages-item:not(:last-child){
     margin-right: 55px;
 }
+.advantages-item::before{
+    display: inline-block;
+content: '';
+width: 100px;
+height: 100px;
+background-repeat: no-repeat;
 
+}
+.advantages-item:nth-child(1)::before{
+    background-image: url(../benefits-of-odigo-photo/Icon\ \(2\).png);
+}
+.advantages-item:nth-child(2)::before{
+    background-image: url(../benefits-of-odigo-photo/Icon\ \(1\).png);
+}
+.advantages-item:nth-child(3)::before{
+    background-image: url(../benefits-of-odigo-photo/Icon\.png);
+}
 .advantages-subject{
     margin-bottom: 26px;
 }
 
 .advantages-text{
     margin-bottom: 39px;
+}
+
+.advantages-link{
+    fill: var(--buttonColor)
+}
+.advantages-link:hover,
+.advantages-link:focus{
+    fill: var(--brandColor);
+}
+
+.advantages-svg{
+    fill: inherit;
+   margin-left: 26px;
 }
 
 
@@ -277,16 +307,19 @@ font-size: 35px;
 line-height: normal;
 }
 
+.travel-link{
+    fill: var(--buttonColor);
+}
+.travel-link:hover,
+.travel-link:focus{
+    fill: var(--brandColor);
+}
+
 .travel-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
-/* .travel-list{
- 
-} */
-
 
 .travel-subject{
     color: var(--textColor);
@@ -296,6 +329,7 @@ font-weight: 700;
 /* line-height: normal; */
 
 }
+
 
 /* Get inspired for your next trip  END*/
 
@@ -338,6 +372,14 @@ margin-bottom: 85px;
 
 .china-text{
     margin-bottom: 58px;
+}
+
+.china-link{
+    fill: var(--buttonColor);
+}
+.china-link:hover,
+.china-link:focus{
+    fill: var(--brandColor);
 }
 
 /* about china END*/
