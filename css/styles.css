@@ -79,7 +79,7 @@ p{
 /* HEADER START*/
 
 .header{
-    background-color: rgba(18, 227, 255, 0.637);
+    background-color: var(--brandColor);
 }
 
 .header-box{
@@ -147,18 +147,21 @@ padding: 62px 0px;
 
 /* HERO START */
 
-.hero{
+.hero-container{
     color: var(--accentColor);
+    background-color: var(--brandColor);
+
     padding-top: 263px;
     padding-bottom: 372px;
+   max-width: 1440px;
+   height: 962px;
     background-color: rgba(6, 17, 68, 0.637);
     background-image: linear-gradient(180deg, rgba(53, 66, 103, 0.00) 0%, #151824 95.04%),  url(../hero-photo/Image-hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-   
-
 }
+
 
 .hero-title{
 font-size: 50px;
@@ -166,6 +169,7 @@ font-weight: 500;
 color: inherit;
 
 margin-bottom: 22px;
+margin-left: 191px;
 }
 
 
@@ -173,10 +177,12 @@ margin-bottom: 22px;
 font-weight: 400;
 width: 546px;
 margin-bottom: 59px;
+margin-left: 191px;
 }
 
 .hero-box{
     display: flex;
+    margin-left: 191px;
    
 }
 
