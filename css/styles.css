@@ -76,16 +76,27 @@ p{
     padding: 0px 15px;
     margin: 0 auto;
 }
+
+.opacity-title{
+    opacity: 0;
+}
 /* HEADER START*/
 
 .header{
     background-color: var(--brandColor);
+    
+
+}
+
+.header-container{
+    position: relative;
+    z-index: 2;
 }
 
 .header-box{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+   position: absolute;
 }
 
 
@@ -93,6 +104,7 @@ p{
     display: inline-block;
     color: var(--accentColor);
     font-size: 40px;
+    margin-right: 442px;
    
 }
 
@@ -160,6 +172,9 @@ padding: 62px 0px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+
+    position: relative;
 }
 
 
@@ -228,8 +243,16 @@ border: none;
 
 
 /* Benefits of Odigo START */
-.advantages{
-    padding-bottom: 112px;
+
+
+
+.advantages-box{
+    position: relative;
+    min-width: 1262px;
+    bottom: 131px;
+    background-color: var(--accentColor);
+    box-shadow: 0px 2px 20px 0px rgba(21, 24, 36, 0.16);
+
 }
 
 
@@ -240,6 +263,7 @@ font-size: 35px;
 font-weight: 500;
 
 padding-top: 93px;
+padding-left: 100px;
 margin-bottom: 223px;
 
 }
@@ -247,6 +271,9 @@ margin-bottom: 223px;
 .advantages-list{
     color: var(--textColor);
     display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 111px;
 }
 
 .advantages-item:not(:last-child){
@@ -303,7 +330,6 @@ background-repeat: no-repeat;
 .travel-container{
     display: flex;
     justify-content: space-between;
-
     padding-bottom: 46px;
 }
 
